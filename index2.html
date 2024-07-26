@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Devleena Kumari | Portfolio</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            
+                            <img style="background-size:cover;" src="data:image/png;base64,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" alt="">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Devleena Kumari</h2>
+                    <h3 class="profile__profession">Aspiring  Developer</h3>
+
+                    <ul class="profile__social">
+                        <!--<a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        --->
+                        <a href="https://www.linkedin.com/in/-319059207/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">1.5</h3>
+                        <p class="profile__info-description">
+                            months of <br> work
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">5</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">0</h3>
+                        <p class="profile__info-description">Satisfied <br> customers</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="assets/pdf/Vaibhavtomar_resume.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        
+                            <a href="https://api.whatsapp.com/send?phone=+910000000000&text=Hello, more information!" target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile -->
+                        <a href="https://m.me/devleena" target="_blank" class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="https://github.com/vaibhavtomar04/portfolio/blob/main/assets/img/project1.jpg?raw=true" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">CMS</span>
+                                    <h3 class="projects__title">College Management System</h3>
+                                    <a href="https://github.com/devleena04/College_management_system_java" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="https://github.com/vaibhavtomar04/portfolio/blob/main/assets/img/project2.jpg?raw=true" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Responsive Website</h3>
+                                    <a href="https://github.com//InteriorDesignsWebsite" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="https://github.com/vaibhavtomar04/portfolio/blob/main/assets/img/project3.jpg?raw=true" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">sample</span>
+                                    <h3 class="projects__title">Empty</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="https://github.com/vaibhavtomar04/portfolio/blob/main/assets/img/project4.jpg?raw=true" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">sample</span>
+                                    <h3 class="projects__title">Empty</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="https://github.com/vaibhavtomar04/portfolio/blob/main/assets/img/project5.jpg?raw=true" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">sample</span>
+                                    <h3 class="projects__title">Empty</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Frontend Developer</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- 
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                       <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Backend Developer</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <!---
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">PHP</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    -->
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Java</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <!---
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Node Js</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; Devleena Kumari. All rigths reserved
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>
